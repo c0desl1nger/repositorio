@@ -1,0 +1,153 @@
+main{
+    background-color: rgb(235, 236, 179);
+    background-image: linear-gradient(to bottom, grey, white);
+    display: grid;
+    grid-template-areas: "texto2" "form";
+}
+.redondo{
+    border-radius: 75%;
+}
+.tablas{
+    background-color: rgba(245, 245, 245, 0);
+    font-style: oblique;
+    font-family: cursive;
+    text-align: center;
+}
+.parrafo{
+    grid-area: parrafo;
+}
+.formulario{
+    grid-area: form;
+    padding: 10pt;
+    margin: 8pt;
+    border: black solid 2pt;
+}
+.obli{
+    font-style: oblique;
+    font-size: 20pt;
+}
+.letras{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-style: oblique;
+    font-family: cursive;
+    text-align: center;
+}
+.flexdad{
+    display: flex;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+@keyframes titilar{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+section{
+    animation-duration: 6s;
+    animation-name: titilar;
+}
+.navbar-brand {
+    font-style: oblique;
+    font-family: cursive;
+    text-align: center; 
+    background-size: 500px;}
+
+
+ul li a:hover {
+    background-color: rgba(151, 142, 142, 0.795);
+    padding: 10px; }
+
+tr{
+    line-height: 15pt;
+}
+tr:hover{
+    color: firebrick;
+    font-size: 14pt;
+}
+.raviol:hover:after{
+    content: url(https://san-genaro.tiendalite.com/images/products/256/20617010-140.jpg);
+    display: block;
+    position: sticky;
+    right: 10px;
+    top: 500px;
+}
+.noqui:hover:after{
+    content: url(https://i.pinimg.com/474x/37/36/fc/3736fc8e1b432bd2611e648fcabbdfb6.jpg);
+    display: block;
+    position: sticky;
+    right: 10px;
+    top: 500px;
+}
+.spa:hover:after{
+    content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiArnRLe4XVT4s6hlGbsrkdhlC01Bg6XunBwGs4Us0FnR3LRqGMO57KczgA0wuw-z9MJw&usqp=CAU);
+    display: block;
+    position: sticky;
+    right: 10px;
+    top: 500px;
+}
+.flan:hover:after{
+    content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhoDiN9SKA0POJBFcI19x_l6kjWK5LA257IlOpp5lBr7uYAi_QuN3SSyNVP0sMs7X8URs&usqp=CAU);
+    display: block;
+    position: sticky;
+    right: 10px;
+    top: 500px;
+}
+.volcan:hover:after{
+    content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhM1WbbDEcr9A1IYs8nnyXPKhuvgQTvsqEpFWvtRtX1L7cFufiONgrAao_kNEde8F53Yk&usqp=CAU);
+    display: block;
+    position: sticky;
+    right: 10px;
+    top: 500px;
+}
+.helado:hover:after{
+    content: url(https://pbs.twimg.com/profile_images/378800000759640154/4ead3073be4c028f9b7c382e7afa9f7c.jpeg);
+    display: block;
+    position: sticky;
+    right: 10px;
+    top: 500px;
+}
+.menu{
+    font-size: 20pt;
+}
+.texto2 {
+    grid-area: texto2;
+    overflow: scroll;
+    margin: 5pt;
+    border: solid white 2pt;
+    padding: 20pt;
+    background-color: #a80b2afa;
+    width: 1420px;
+    height: 170px;
+    line-height: 2;
+    justify-self: stretch; }
+  
+.texto2__h2 {
+    color: white;
+    text-decoration: wavy; }
+.parrafo{
+    font-family: cursive;
+    padding: 10pt;
+}
+
+@media screen and (max-width:600px) {
+    main{
+        background-color: rgb(235, 236, 179);
+        background-image: linear-gradient(to bottom, rgb(221, 186, 29), white);
+    }
+    .texto2 {
+        overflow: scroll;
+        margin: 2pt;
+        border: solid white 1pt;
+        padding: 10pt;
+        background-color: #2225e4fa;
+        width: 550px; }
+}

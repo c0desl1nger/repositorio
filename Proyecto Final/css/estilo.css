@@ -1,0 +1,80 @@
+main {
+  background-image: linear-gradient(to bottom, grey, white);
+  display: grid;
+  grid-template-areas: "nav nav nav"  "texto2 texto2 texto3" "accordion accordion accordion" "imagenes imagenes imagenes";
+  grid-template-columns: 1fr 100px 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: space-evenly; }
+
+.navbar-brand {
+  font-style: oblique;
+  font-family: cursive;
+  text-align: center; }
+
+.texto2 {
+  grid-area: texto2;
+  overflow: scroll;
+  margin: 5pt;
+  border: solid white 2pt;
+  padding: 20pt;
+  background-color: #a80b2afa;
+  width: 500px;
+  height: 300px;
+  line-height: 2;
+  justify-self: stretch; }
+
+.texto2__h2 {
+  color: white;
+  text-decoration: wavy; }
+
+.texto3 {
+  grid-area: texto3;
+  justify-self: center;
+  align-self: center;
+  border: solid white 2pt; }
+
+ul li a:hover {
+  background-color: rgba(151, 142, 142, 0.795);
+  padding: 10px; }
+
+.nav {
+  grid-area: nav; }
+
+.imagenes {
+  grid-area: imagenes;
+  align-self: center;
+  justify-self: center; }
+
+.accordion {
+  grid-area: accordion; }
+
+.imagenes__redondo {
+  border-radius: 75%; }
+
+.imagenes__h2 {
+  font-style: oblique;
+  font-family: cursive;
+  text-align: center; }
+
+.imagenes__letras {
+  font-style: oblique;
+  font-family: cursive;
+  text-align: center; }
+
+  @media screen and (max-width:600px) {
+    main {
+      background-image: linear-gradient(to bottom, rgb(230, 179, 42), white);
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+      justify-content: space-evenly; }
+    .texto2 {
+      overflow: scroll;
+      margin: 2pt;
+      border: solid rgb(20, 2, 2) 1pt;
+      padding: 10pt;
+      background-color: #0e40cafa;
+      width: 250px;
+      height: 150px; }
+    }
